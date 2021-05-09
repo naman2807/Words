@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65f958c41a658337a26fd855e2be8d91/navigation-fragment-2.2.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-fragment/2.2.2/14236c383673a4736a6e5429e10d7f418b10489b/navigation-fragment-2.2.2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

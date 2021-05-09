@@ -6,6 +6,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f594cb22e2a9142fa162b930b020c57c/navigation-runtime-ktx-2.2.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.navigation/navigation-runtime-ktx/2.2.2/4d2da12a557444e5706dd6ca99f059ec099a45de/navigation-runtime-ktx-2.2.2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
