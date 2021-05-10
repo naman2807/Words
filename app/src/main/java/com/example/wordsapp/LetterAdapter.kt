@@ -24,6 +24,9 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.annotation.RequiresApi
+import androidx.core.os.bundleOf
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
@@ -32,6 +35,8 @@ import androidx.recyclerview.widget.RecyclerView
  */
 class LetterAdapter(val context: Context) :
     RecyclerView.Adapter<LetterAdapter.LetterViewHolder>() {
+
+    private var navController : NavController? = null
 
     // Generates a [CharRange] from 'A' to 'Z' and converts it to a list
     private val list = ('A').rangeTo('Z').toList()
@@ -66,6 +71,17 @@ class LetterAdapter(val context: Context) :
         val item = list.get(position)
         holder.button.text = item.toString()
         holder.button.setOnClickListener{
+
+            /**
+             * 1 way of navigation
+             */
+//            var bundle = bundleOf(holder.button.text.toString() to R.id.wordListFragment)
+//            navController = Navigation.findNavController(holder.view)
+//            navController!!.navigate(R.id.action_letterListFragment_to_wordListFragment, bundle)
+
+            /**
+             * 2 way of navigation
+             */
             val action = LetterListFragmentDirections.actionLetterListFragmentToWordListFragment(holder.button.text.toString())
             holder.view.findNavController().navigate(action)
         }
